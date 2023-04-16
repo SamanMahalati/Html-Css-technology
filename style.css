@@ -1,0 +1,657 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Metropolis;
+    text-decoration: none;
+    list-style-type: none;
+}
+:root{
+    --purpleColor:#722ED1;
+    --HeaderColor: #EAF5FF;
+    --pinkColor: #F9F0FF;
+    --grayColor: #8989A2;
+    --whiteColor: #fff;
+    --blackColor: #000;
+    --grennColor: #F6FFED;
+    --redColor:  #FFF1F0;
+    --blueColor: #E6F7FF;
+    --purplePink: #F9F0FF;
+    --lightBlue: #E2F1FF;
+    --PinkLine: #DEC9FA;
+    --blueGoogle: #2563EB;
+    --FooterColor: #FBFCFF;
+    --purpleInput: #e6e6fa;
+    --FooterItemColor: #160637;
+}
+html, body {
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    overflow-x: hidden;
+}
+header {
+    width: 100%;
+    position: relative;
+    padding: 1rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: var(--HeaderColor);
+    clip-path: polygon(0% 0% , 100% 0% , 100% calc(100% - 50px) , 0% 100%);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+.munu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu__items{
+    margin: 0 1.2rem;
+    font-size: 14px;   
+    cursor: pointer;
+}
+#MenuBtn{
+    display: none;
+}
+.GetStart__Btn{
+    padding: 7px 20px;
+    color: var(--purpleColor);
+    border-radius: 2rem;
+    border: 1px solid var(--purpleColor);
+    transition: 0.3s;
+}
+.GetStart__Btn:hover{
+    background-color: var(--purpleColor);
+    color: var(--whiteColor);
+    transition: 0.3s;
+}
+.WhyChooseUs__Wrrapper{
+    display: flex;
+    align-items: center;
+    margin: 0 0 4rem 0;
+}
+
+.WhyChooseUs__Wrrapper{
+    flex-direction: column; 
+    width: 100%;
+    gap: 2rem;
+}
+.Landing__release , .WhyChooseUs__titr , .ProductTeam__titr , .EngineerTeam__titr{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--pinkColor);
+    width: 18rem;
+    padding: 10px 20px;
+    color: var(--purpleColor);
+    border-radius: 2rem;
+}
+
+.EngineerTeam__titr{
+    width: 100%;
+}
+
+.WhyChooseUs__Titleicon , .EngineerTeam__Titleicon{
+    margin: 0 8px 0 0;
+}
+.WhyChooseUs__titr{
+    width: 11rem;
+    padding: 10px 20px;
+    text-align: center;
+}
+.ProductTeam__titr{
+    width: 14rem;
+    gap: 8px;
+}
+.landing__release__icon{
+    margin: 0 5px 0 0;
+}
+.LearnMore__textDecoration{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Landing__wrrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 4rem 0;
+    width: 100%;
+}
+.Landing__title{
+    font-size: 50px;
+    width: 30rem;
+}
+.Landing__more{
+    width: 30rem;
+    color: var(--grayColor);
+    line-height: 1.3rem;
+}
+.Landing__text{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.Landing__image {
+
+}
+.Free__TrialBtn , .LearnMore__Btn{
+    padding: 20px 35px;
+    border-radius: 2rem;
+    border: 0;
+    outline: none;
+}
+.Free__TrialBtn{
+    background-color: var(--purpleColor);
+    color: var(--whiteColor);
+    margin: 0 15px 0 0;
+}
+.LearnMore__Btn{
+    background-color: var(--whiteColor);
+}
+.Landing__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    margin: 24px 0 0 0;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    gap: 6rem;
+}
+.WhyChooseUs__moreText__wrrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.WhyChooseUs__text__wrrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.WhyChooseUs__text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 34px;
+    font-size: 27px;
+}
+.WhyChooseUs__textMore{
+    text-align: center;
+    color: var(--grayColor);
+    line-height: 1.4rem;
+    padding: 0 30rem;
+}
+.WhyChooseUs__moreTextItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 3rem;
+    gap: 22px;
+    width: 25rem;
+}
+.moreTextTitle{
+    text-align: center;
+}
+.moreText__content{
+    color: var(--grayColor);
+    line-height: 1.15rem;
+}
+.DataIcon{
+    background-color: var(--grennColor);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.PowerIcon{
+    background-color: var(--redColor);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.BusinessIcon{
+    background-color: var(--blueColor);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.ProductTeam__Wrrapper , .EngineerTeam__Wrrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.ProductTeamContent__wrrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1rem;
+    width: 50%;
+}
+.vactor__wrrapper{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ProductTeamContent__moreText , .EngineerTeamContent__moreText{
+    width: 15rem;
+    color: var(--grayColor);
+    line-height: 1.3rem;
+    text-align: center;
+}
+.EngineerTeam__LeftPart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1rem;
+    width: 50%;
+}
+.Brands__Wrrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(var(--purplePink) , var(--lightBlue));
+    clip-path: polygon(0 25%, 100% 0, 100% 80%, 0 100%);
+    padding: 15rem 0;
+    gap: 3rem;
+}
+.person__line{
+    width: 80%;
+    height: 1px;
+    background-color: var(--PinkLine);
+}
+.Person__title{
+    width: 50%;
+    text-align: center;
+    line-height: 1.9rem;
+    font-weight: 400;
+}
+.PersonBrand__Vector{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    flex-wrap: wrap;
+    padding: 0 3rem;
+}
+.ContactUs__Wrrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.ContactUs__Left , .ContactUs__Right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 40rem;
+}
+.ContactUs__title{
+    width: 80%;
+    line-height: 1.9rem;
+    text-align: center;
+    font-weight: 800;
+}
+.ContactUs__text{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: var(--grayColor);
+}
+.ContactUs__text::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: var(--grayColor);
+    width: 25%;
+    right: 57%;
+    top: 50%;
+}
+.ContactUs__text::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: var(--grayColor);
+    width: 25%;
+    left: 57%;
+    top: 50%;
+}
+.form__title{
+    font-size: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2rem;
+    border-radius: 0.7rem;
+    
+}
+.form__wrrapper{
+    -webkit-box-shadow: 0px 39px 1px 25px var(--PinkLine); 
+    box-shadow: 0px 39px 1px 25px var(--PinkLine);
+    border-radius: 0.7rem;
+
+}
+.input__wrrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.input__wrrapper input{
+    width: 344px;
+    padding: 0 0 0 20px;
+    height: 48px;
+    border-radius: 5px;
+    border: 1.3px solid var(--grayColor);
+}
+.FormBtn__wrrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    gap: 1rem;
+}
+.startBtn{
+    width: 344px;
+    height: 44px;
+    background-color: var(--purpleColor);
+    color: var(--whiteColor);
+    padding: 0.7rem 2rem;
+    border: 0;
+    outline: none;
+    border-radius: 0.3rem;
+    font-size: 14px;
+}
+.GoogleBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 199px;
+    height: 48px;
+    border: 1px solid var(--blueGoogle);
+}
+.GoogleBtn img{
+    width: 28px;
+    height: 28px;
+    margin: 0 7px;
+}
+.GoogleBtn span{
+    background-color: var(--blueGoogle);
+    color: var(--whiteColor);
+    width: 100%;
+    height: 2.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ORText{
+    font-weight: 500;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 4rem 11rem;
+    background-color: var(--FooterColor);
+    gap: 7rem;
+    flex-wrap: wrap;
+}
+
+.FooterItems__wrrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    height: 10rem;
+
+}
+.inputSend__wrrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#inputSend{
+    width: 200px;
+    height: 40px;
+    border: 0;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    padding: 0 10px;
+    background-color: var(--purpleInput);
+}
+.sendImg__Wrrapper{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purpleInput);
+    border-radius: 0 5px 5px 0;
+    height: 40px;
+    padding: 10px;
+}
+.FooterItems{
+    height: 10rem;
+}
+.FooterItems li a {
+    color: var(--FooterItemColor);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+.FooterItem__title{
+    color: var(--FooterItemColor);
+}
+.FooterSocialTxt{
+    width: 12rem;
+    color: var(--FooterItemColor);
+    font-weight: 400;
+    line-height: 1rem;
+}
+.SocialMedia__wrrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.EndSiteTxt{
+    text-align: center;
+    padding: 10px 0 1rem 0;
+}
+
+@media only screen and (max-width: 1840px){
+    #EnginnerPng{
+        height: 16rem;
+    }
+}
+
+@media only screen and (max-width: 1580px){
+    .WhyChooseUs__textMore {
+        padding: 0 15rem;
+    }
+}
+
+@media only screen and (max-width: 1180px){
+    .Landing__wrrapper {
+        justify-content: center;
+        gap: 4rem;
+    }
+    .Landing__text {
+        order: 2;
+    }
+    .Landing__image {
+        order: 1;
+    }
+    .Landing__text {
+        align-items: center;
+    }
+    .Landing__title {
+        text-align: center;
+    }
+    .Landing__more {
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 1145px){
+    .ProductTeam__Wrrapper , .EngineerTeam__Wrrapper{
+        gap: 4rem;
+    }
+    #EnginnerPng{
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 940px){
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 0rem;
+    }
+}
+
+@media only screen and (max-width: 920px){
+    .WhyChooseUs__textMore {
+        padding: 0 9rem;
+    }
+}
+
+@media only screen and (max-width: 780px){
+    .menu__items,
+    .GetStart__Btn{
+        display: none;
+    }
+    #MenuBtn{
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 670px){
+    footer {
+        padding: 4rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 630px){
+    .WhyChooseUs__textMore {
+        padding: 0 3rem;
+    }
+    #EnginnerPng {
+        height: 19rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .Landing__title {
+        font-size: 35px;
+    }
+    .Landing__more {
+        padding: 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    header {
+        padding: 1rem 3rem;
+    }
+    #LandingVactor{
+        height: 19rem;
+    }
+    .Landing__title {
+        font-size: 28px;
+    }
+    .WhyChooseUs__textMore {
+        padding: 0;
+    }
+    #ProductTeamVactor{
+        height: 19rem;
+    }
+    .ProductTeamContent__wrrapper , .EngineerTeam__LeftPart {
+        width: 100%;
+    }
+    .ProductTeamContent__title , .EngineerTeamContent__title{
+        padding: 0 4rem;
+        text-align: center;
+    }
+    #EnginnerPng {
+        height: 14rem;
+    }
+    .Person__title {
+        padding: 4rem 0 0 0;
+    }
+    .ContactUs__text::after{
+        right: 67%;
+    }
+    .ContactUs__text::before{
+        left: 67%;
+    }
+    footer {
+        padding: 4rem 2rem;
+    }
+    .form__wrrapper {
+        width: 90%;
+    }
+    .input__wrrapper input {
+        width: 241px;
+    }
+    .startBtn {
+        width: 168px;
+        padding: 0.7rem 0rem;
+    }
+    .GoogleBtn {
+        width: 168px;
+    }
+    .GoogleBtn span {
+        padding: 0rem 1px;
+        line-height: 1.2rem;
+    }
+    
+}
+
+
